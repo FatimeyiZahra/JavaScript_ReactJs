@@ -74,3 +74,32 @@ const deleteUser = (us) => {
 };
 deleteUser("zahra");
 
+//arrayin icinden deyeri olmayan seyleri cixarmag ucun:
+const array = [34, 43, null, 0, NaN, "", undefined, false, 100, "zxczx"];
+
+const filterArray = array.filter(Boolean);
+console.log("filterArray", filterArray);
+
+//output  ==> filterArray  [ 34, 43, 100, 'zxczx' ]
+
+// arrayin icinden tesadufi olaraq bir elementi secmek ucun:
+let randomElement = Math.floor(Math.random() * fruit.length);
+console.log("random element from array => ", fruit[randomElement]);
+
+// arrayin icindeki stringlerin basherfinin boyuk olmasi ucun:
+const upperCaseArray = fruit.map((item) => {
+  return item[0].toUpperCase() + item.slice(1);
+});
+console.log("upperCaseArray", upperCaseArray);
+
+//arrayin icinden max ve min valueni goturmek ucun
+const numArray = [1, 435, 34, 23, 2, 3, 12, 12, 3];
+console.log(Math.max(...numArray)); //Math.min(...numArray)
+
+// dublicat olanlari arrayin icinden silmek ucun:
+const removeDublicate = (arr) => [...new Set(arr)];
+console.log(removeDublicate([1, 1, 2, 3, 34, 35, 35]));
+
+//basga yol:
+const uniqueArr = [...new Set(numArray)];
+console.log(uniqueArr);

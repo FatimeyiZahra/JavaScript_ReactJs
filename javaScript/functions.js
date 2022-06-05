@@ -4,7 +4,7 @@ function count(x, y) {
 }
 console.log("count", count(2, 3));
 
-//arrow functions, fat arrowda deyilir. Funksiya return olaraq bir sey gaytarir ve onu bir deyiskene menimsedirik
+//arrow functions, fat arrowda deyilir. Funksiya return olaraq bir sey gaytarir ve onu bir deyiskene menimsedirik. arrow funcktipnu yaradandan sonra cagirmag lazimdi
 const getUser = (name, surname) => {
   console.log("name is", name, "surname is", surname);
 };
