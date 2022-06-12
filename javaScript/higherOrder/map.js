@@ -6,14 +6,4 @@ const newArr = arr.map((item) => {
 
 console.log(newArr);
 
-let user = [
-  {
-    name: "zahra",
-  },
-  {
-    name: "farida",
-  },
-  {
-    name: "gulnara",
-  },
-];
+
